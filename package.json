@@ -38,7 +38,7 @@
     "@types/mocha": "^5.2.7",
     "@types/mongoose": "^5.5.20",
     "@types/morgan": "^1.7.37",
-    "@types/node": "^10.14.21",
+    "@types/node": "^10.17.15",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
     "mocha": "^6.2.1",
