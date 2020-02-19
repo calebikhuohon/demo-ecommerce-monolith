@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import { userRouter } from "./api/User";
 import { BASE_PATH, MONGODB_URI } from "./config";
 import { logger } from "./utils/logger";
+import { ProductRouter } from "./api/Product/productRouter";
 
 class App {
     public express = express();
@@ -22,6 +23,7 @@ class App {
 
     private mountRoutes() {
         this.express.use(`${this.basePath}/users`, userRouter);
+        this.express.use(`${this.basePath}/products`, ProductRouter);
     }
 
     private registerMiddlewares() {
